@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manikanta</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+	<header>
+		<h1>Manikanta</h1>
+	</header>
+
+<div id="container">
+	<div class="tab">
+  <button class="tablinks" onclick="getTab(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="getTab(event, 'about')">About Me</button>
+  <button class="tablinks" onclick="getTab(event, 'contact')">Contact Me</button>
+  <button class="tablinks" onclick="getTab(event, 'gallery')">Gallery</button>
+
+	</div>
+
+<div id="mainContent"> 
+	
+	<div id="Home" class="tabcontent">
+	<p> <img src="images/w1.jpeg" alt="couldn't load the image, Sorry"> <br><br> Hi, I am Manikanta, Welcome to my homepage.<br> 
+   Please use navigator tab to know more about me.</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   </div>
+
+   <div id="about" class="tabcontent">
+   <h3>About Me</h3>
+   <p>Myself Gadde Manikanta, I am Software Engineer at Zemoso Technologies Pvt Ltd.</p>
+   <p>I graduated from IIT Roorkee in 2017.</p>
+   <p>I was born and raised in gudipudi, a small village in Guntur Dist, Andhra Pradesh.</p>
+   <p>I am huge fan of Manchester United Football Club.</p>
+   <p>I play lawn tennis, badminton and cricket.</p> 
+	</div>
+
+	<div id="contact" class="tabcontent">
+   <h3>Please feel free to contact me</h3>
+   
+   <ul>
+   	<li>Email Id: manikanta.gadde@zemosolabs.com</li>
+   	<li>Phone: 8266802238</li>
+   	<li>Address: Hyderabad, Telangana</li>   
+   </ul>
+	</div>
+	
+	<div id="gallery" class="tabcontent">
+
+   <div id="pics">
+   	<table>
+		     <th colspan="3"> <h3>Best of Rafa's wallpapers</h3> </th>
+			 <tr>
+				<td><img src="images/r2.jpg"/></td>
+				<td><img src="images/r5.jpg"/></td>
+				<td><img src="images/r6.jpg"/></td>
+			</tr>
+			<tr>
+				<td><img src="images/r7.jpg"/></td>
+				<td><img src="images/r8.jpeg"/></td>
+				<td><img src="images/r9.jpg" /></td>
+			</tr>
+			<tr>
+				<td><img src="images/r5.jpg"/></td>
+				<td><img src="images/r2.jpg"/> </td>
+				<td><img src="images/r7.jpg"/> </td>
+			</tr>
+	  </table>
+   
+   </div>
+   
+   </div>
+
+</div>
+ 
+<footer>
+<h5>Copyright &#169 All Rights Reserved to manikanta.</h5>
+</footer>
+
+<script>
+function getTab(evt, Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manikanta</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<header>
+		<h1>Manikanta</h1>
+	</header>
+
+<div id="container">
+	<div class="tab">
+  <button class="tablinks" onclick="getTab(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="getTab(event, 'about')">About Me</button>
+  <button class="tablinks" onclick="getTab(event, 'contact')">Contact Me</button>  
+  <button class="tablinks" onclick="getTab(event, 'roughGallery')">Gallery</button>
+
+	</div>
+
+<div id="mainContent"> 
+	
+	<div id="Home" class="tabcontent">
+		<p> <img src="welcome.jpg" alt="couldn't load the image, Sorry"> 
+		<br><br> Hi, I am Manikanta, Welcome to my homepage.<br> 
+    	Please use navigator tab to know more about me.</p>
+   	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   </div>
+
+   <div id="about" class="tabcontent">
+   <h3>About Me</h3>
+   		<p>Myself Gadde Manikanta, I am Software Engineer at Zemoso Technologies Pvt Ltd.</p>
+   		<p>I graduated from IIT Roorkee in 2017.</p>
+  			<p>I was born and raised in gudipudi, a small village in Guntur Dist, Andhra Pradesh.</p>
+   		<p>I am huge fan of Manchester United Football Club.</p>
+   		<p>I play lawn tennis, badminton and cricket.</p> 
+	</div>
+
+	<div id="contact" class="tabcontent">
+   	<h3>Please feel free to contact me</h3>
+   		<ul>
+   			<li>Email Id: manikanta.gadde@zemosolabs.com</li>
+   			<li>Phone: 8266802238</li>
+   			<li>Address: Hyderabad, Telangana</li>   
+   		</ul> 
+   
+   		<h3>Leave your details here to contact you</h3>
+   	<form name="mycontactForm" id="contactForm">
+      		<label for="name">Name: </label> <br>
+   			<input type="text" name="Name" id="name" placeholder="Your Name...." required> <br>
+   			<label for="email">Email: </label> <br>
+   			<input type="email" name="eName" id="email" placeholder="Your Email Id...." required> <br>
+   			<label for="message">Message: </label> <br>
+   			<textarea type="text" name="mName" id="message"  placeholder="Write your message here......" 
+   			style="height: 50px; width: 40%" required></textarea>
+      		<br><br>
+      		<input type="submit" value="Submit" onsubmit="contactBtn()">   	
+   	</form>
+   
+	</div>
+
+   <div id="roughGallery" class="tabcontent">
+      
+   
+   <div ><button id="addButton" >Add</button></div>
+      
+   <!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+  		<div class="modal-content">
+    	<span class="close">&times;</span>
+    	
+    		<form id="addImageForm" name="myForm" onsubmit="validateAll()">
+			
+				<label for="url">URL: </label> 
+				<input type="url" name="urlName" id="imageUrl" size="80" placeholder="paste the url here" required>
+				<br>
+				<label for="name">Name: </label>
+				<input type="name" name="Name" id="imageName" placeholder="Name of the pic" required>
+				<br>	
+				<label for="info">Information: </label> 
+				<input type="text" name="iName" id="imageInfo" size="74" placeholder="brief information about the image" 
+				required>
+				<br>
+				<label for="date">Upload Date: </label>
+				<input type="date" name="uName" id="imageUdate" placeholder="upload date" required max="Date ()">
+				<br><br>					
+			</form>
+				<button id="addImage">Add Image</button>
+				<button id="editImage">Edit Image</button>				
+			
+			<br> 
+			 		
+  		</div>
+  	</div>
+   
+   </div>
+    	
+   </div>
+</div>
+ 
+<footer>
+<h5>Copyright &#169 All Rights Reserved to manikanta.</h5>
+</footer>
+
+<script src="script.js"></script>
+     
+</body>
+</html> 
+

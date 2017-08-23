@@ -1,0 +1,15 @@
+var jsonObj = '{ "images": [' +
+'{"id": 0, "url": "http://www.hdwallpaper.nu/wp-content/uploads/2015/08/Rafael_Nadal_wallpaper_004.jpg", ' + 
+'"name":"nadal", "information":"Clay court king", "uDate":"21/08/2017"}, ' +  
+'{"id": 1, "url": "http://7wallpapers.net/wp-content/uploads/2016/05/4_Roger-Federer.jpg", ' + 
+'"name": "federer", "information":"Best tennis player of all time.", "uDate":"21/08/2017"}, ' + 
+'{"id": 2, "url": "https://images8.alphacoders.com/476/thumb-1920-476725.jpg", ' +
+'"name": "cristiano", "information": "Best footballer of all time.", "uDate": "21/08/2017"}, '+ 
+'{"id": 3, "url": "http://media1.santabanta.com/full1/Cricket/Virat%20Kohli/virat-kohli-4a.jpg", ' +
+'"name": "kohli", "information":"King of cricket", "uDate": "21/08/2017"}, ' + 
+'{"id": 4, "url": "http://images.footyroom.com/avatars/54208", ' + 
+'"name": "united", "information": "Manchester United Best Football club in the world.", "uDate": "21/08/2017"}, ' + 
+'{"id": 5, "url": "https://s-media-cache-ak0.pinimg.com/originals/07/65/60/076560f40fc01333739626d3c3b08c08.jpg", ' + 
+'"name": "dortmund", "information":"One of the best German football clubs.", "uDate": "21/08/2017"}, ' +
+'{"id": 6, "url": "http://99pcwallpapers.com/wp-content/uploads/lionel-messi-black-and-white-wallpaper.jpg", ' + 
+'"name": "lionel", "information":"God of Football", "uDate": "21/08/2017"} ]}';	

@@ -1,0 +1,104 @@
+body {
+	font-family: "Lato", sans-serif;
+	background-color: paleturquoise;
+
+}
+
+/* Style header */
+header {
+	color:lightgreen;
+}
+
+h1{
+    color: #333;
+	 text-align: center;
+}
+
+/* Style tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #333;
+    border-radius: 5px;
+    
+}
+
+/* Style buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: paleturquoise;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* none decoration after visit */
+div.tab button:visited {
+    text-decoration: none;
+}
+
+/* Create an active tab-link class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    color:black;
+} 
+
+/* Style homepage image.*/
+img {   
+	width: 60%;
+	height: 375px;
+	float: right;
+	border-radius: 10px;
+}
+
+/* Style table in Gallery tab*/
+table {
+	
+	margin-left:  3px;
+	margin-right: 10px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+td {
+	height: 200px;
+}
+
+td img {
+	height: 275px;
+	width: 410px;
+	box-shadow: none;
+}
+
+th {
+	font-family: Verdana;
+	font-size: 1em;
+	font-weight: normal;
+	color: #880E4F;
+} 
+
+/* Style footer */
+footer {
+	color: lightgreen;
+} 
+
+h5 {
+	text-align: center;
+	color: black;
+}
