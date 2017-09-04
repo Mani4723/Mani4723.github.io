@@ -46,7 +46,9 @@ h3 {
 }
 
 .tHeader {
-	 width: 100%;
+	 width: 25%;
+	 position: fixed;
+	 background-color: white;
 }
 
 .iHeader {

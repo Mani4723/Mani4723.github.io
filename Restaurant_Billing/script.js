@@ -52,6 +52,10 @@ var tables = [{table_id: 1,
 				  {table_id: 3, 
 				  num_of_items: 0, 
 				  items: [], 
+				  Bill: 0},
+				  {table_id: 4, 
+				  num_of_items: 0, 
+				  items: [], 
 				  Bill: 0}];
 				  
 				  
@@ -80,7 +84,8 @@ var menu_items = [{item_id: 1, item_name: "Veg Sweet corn Soup", cost: 125, cate
 
 var initialTables = [{Table_id: "t1", table_name: "Table 1", table_num: "1"},
 							{Table_id: "t2", table_name: "Table 2", table_num: "2"},
-							{Table_id: "t3", table_name: "Table 3", table_num: "3"}];
+							{Table_id: "t3", table_name: "Table 3", table_num: "3"},
+							{Table_id: "t4", table_name: "Table 4", table_num: "4"}];
 							
 							
 							
@@ -189,9 +194,9 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
 	 removeAll();
     modal.style.display = "none";
-    document.getElementById("t1").style.backgroundColor = "white";
-    document.getElementById("t2").style.backgroundColor = "white";
-    document.getElementById("t3").style.backgroundColor = "white";
+    for (var i = 0; i < initialTables.length; i++) {
+    	document.getElementById(initialTables[i].Table_id).style.backgroundColor = "white";
+    }
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -199,10 +204,9 @@ window.onclick = function(event) {
     if (event.target == modal) {
     	  removeAll();
         modal.style.display = "none";
-        document.getElementById("t1").style.backgroundColor = "white";
-    	  document.getElementById("t2").style.backgroundColor = "white";
-        document.getElementById("t3").style.backgroundColor = "white";
-        
+        for (var i = 0; i < initialTables.length; i++) {
+        	document.getElementById(initialTables[i].Table_id).style.backgroundColor = "white";
+        }     
     }
 }								
 
@@ -466,9 +470,9 @@ function genBill() {
 
 //close bill
 function pay() {
-	document.getElementById("t1").style.backgroundColor = "white";
-   document.getElementById("t2").style.backgroundColor = "white";
-   document.getElementById("t3").style.backgroundColor = "white";
+	for (var i = 0; i < initialTables.length; i++) {
+   document.getElementById(initialTables[i].Table_id).style.backgroundColor = "white";
+   }
 	billmodal.style.display = "none";
 	 	
 }
