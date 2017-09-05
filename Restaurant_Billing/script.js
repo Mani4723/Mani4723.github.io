@@ -56,6 +56,22 @@ var tables = [{table_id: 1,
 				  {table_id: 4, 
 				  num_of_items: 0, 
 				  items: [], 
+				  Bill: 0},
+				  {table_id: 5, 
+				  num_of_items: 0, 
+				  items: [], 
+				  Bill: 0},
+				  {table_id: 6, 
+				  num_of_items: 0, 
+				  items: [], 
+				  Bill: 0},
+				  {table_id: 7, 
+				  num_of_items: 0, 
+				  items: [], 
+				  Bill: 0},
+				  {table_id: 8, 
+				  num_of_items: 0, 
+				  items: [], 
 				  Bill: 0}];
 				  
 				  
@@ -85,7 +101,11 @@ var menu_items = [{item_id: 1, item_name: "Veg Sweet corn Soup", cost: 125, cate
 var initialTables = [{Table_id: "t1", table_name: "Table 1", table_num: "1"},
 							{Table_id: "t2", table_name: "Table 2", table_num: "2"},
 							{Table_id: "t3", table_name: "Table 3", table_num: "3"},
-							{Table_id: "t4", table_name: "Table 4", table_num: "4"}];
+							{Table_id: "t4", table_name: "Table 4", table_num: "4"},
+							{Table_id: "t5", table_name: "Table 5", table_num: "5"},
+							{Table_id: "t6", table_name: "Table 6", table_num: "6"},
+							{Table_id: "t7", table_name: "Table 7", table_num: "7"},
+							{Table_id: "t8", table_name: "Table 8", table_num: "8"}];
 							
 							
 							
